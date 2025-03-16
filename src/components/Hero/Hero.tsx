@@ -8,7 +8,6 @@ const Hero = () => {
     const profile = "/assets/nat2.jpg"
 
     const MotionImage = motion(Image);
-    const MotionLink = motion(Link);
 
     const CONTENT = `Hello! I am a passionate Front-End Developer eager to learn and grow. I am seeking an internship opportunity to enhance my skills and gain real-world experience. I have a solid foundation in React, Next.js, Tailwind CSS, and Angular and love working in a dynamic team environment!`;
 

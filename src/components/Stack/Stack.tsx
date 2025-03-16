@@ -2,8 +2,8 @@
 
 import React from "react";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs, SiMongodb, SiMysql, SiNestjs, SiAngular, SiHtml5 } from "react-icons/si";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { SiNextdotjs, SiAngular, SiHtml5 } from "react-icons/si";
+import { FaReact,} from "react-icons/fa";
 import {  motion, Variants } from "framer-motion";
 
 const Stack = () => {
