@@ -11,7 +11,7 @@ const Project = () => {
             image: "/assets/admin1.jpg",
             des: "A login dashboard built with Tailwind CSS and HTML, designed for user authentication and project management.",
             tech: ["Tailwind CSS", "HTML"],
-            demo: "https://login-to-dash-board-workshop-tailwind-5-uv5r-18marg2vq.vercel.app/"
+            demo: "https://login-to-dash-board-workshop-tailwind-5.vercel.app/"
         },
         {
             title: "Food POS Workshop",
