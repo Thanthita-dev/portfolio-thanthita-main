@@ -7,33 +7,27 @@ import Link from "next/link"
 const Project = () => {
     const PROJECTS = [
         {
-            title: "E-Commerce Website",
-            image: "/assets/mongodb.svg",
-            des: "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-            tech: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-            demo: "https://your-ecommerce-demo.com"
+            title: "Login to DashBoard",
+            image: "/assets/admin1.jpg",
+            des: "A login dashboard built with Tailwind CSS and HTML, designed for user authentication and project management.",
+            tech: ["Tailwind CSS", "HTML"],
+            demo: "https://login-to-dash-board-workshop-tailwind-5-uv5r-18marg2vq.vercel.app/"
         },
         {
-            title: "Task Management App",
-            image: "/assets/angular.svg",
-            des: "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-            tech: ["HTML", "CSS", "Angular", "Firebase"],
-            demo: "https://your-taskapp-demo.com"
+            title: "Food POS Workshop",
+            image: "/assets/POS.png",  
+            des: "A Point of Sale (POS) system for restaurants, built with Tailwind CSS and modern web technologies.",
+            tech: ["Tailwind CSS", "HTML"],
+            demo: "https://food-pos-workshop-thiwind4.vercel.app/"
         },
         {
-            title: "Portfolio Website",
-            image: "/assets/svelte.svg",
-            des: "A personal portfolio website showcasing projects, skills, and contact information.",
-            tech: ["HTML", "CSS", "Svelte", "Tailwind"],
-            demo: "https://your-portfolio-demo.com"
-        },
-        {
-            title: "Blogging Platform",
-            image: "/assets/nestjs.svg",
-            des: "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-            tech: ["HTML", "CSS", "Nest.js", "Express", "MySQL"],
-            demo: "https://your-blogging-demo.com"
-        },
+            title: "Shopee-Clone",
+            image: "/assets/shopee.png",
+            des: "A Shopee-inspired e-commerce website built with Tailwind CSS and HTML",
+            tech: ["Tailwind CSS", "HTML"],
+            demo: "http://shopee-clone-workshop-tailwind2.vercel.app/"
+
+        }
     ];
 
     return (
@@ -63,8 +57,8 @@ const Project = () => {
                                 className="shadow-lg object-contain"
                                 src={item.image} 
                                 alt={item.title}
-                                width={190}
-                                height={190}
+                                width={400}
+                                height={300}
                             />
                         </motion.div>
 

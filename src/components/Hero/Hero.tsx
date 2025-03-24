@@ -73,7 +73,7 @@ const Hero = () => {
                     </motion.p>
 
                     {/* Download Resume Button */}
-                    <motion.div variants={childVariants}>
+                    {/* <motion.div variants={childVariants}>
                         <Link
                             href="/resume.pdf"
                             target="_blank"
@@ -82,7 +82,7 @@ const Hero = () => {
                         >
                             Download Resume
                         </Link>
-                    </motion.div>
+                    </motion.div> */}
                 </motion.div>
             </div>
         </div>
