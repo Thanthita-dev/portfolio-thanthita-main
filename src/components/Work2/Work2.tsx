@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 const Stack = () => {
   type StackIconType = {
@@ -84,11 +85,14 @@ const Stack = () => {
               className="flex items-center gap-1" 
               key={index}
             >
-              <img 
-                src={item.image}
-                alt={item.alt}
-                className={item.className}
-              />
+              <div className="relative w-16 h-16 md:w-20 md:h-20">
+                <Image 
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </motion.div>
           ))}
         </div>

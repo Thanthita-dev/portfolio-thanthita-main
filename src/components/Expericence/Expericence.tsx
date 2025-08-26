@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Experience = () => {
     const EXPERIENCES = [
@@ -49,11 +50,14 @@ const Experience = () => {
                             initial={{ opacity: 0, x: -100 }}
                             transition={{ duration: 1 }}
                             className="w-full lg:w-1/4 flex items-center justify-center lg:justify-start mb-4 lg:mb-0">
-                            <img 
-                                src={item.image} 
-                                alt={item.company} 
-                                className="w-40 h-40 object-contain rounded-lg"
-                            />
+                            <div className="relative w-40 h-40">
+                                <Image 
+                                    src={item.image} 
+                                    alt={item.company} 
+                                    fill
+                                    className="object-contain rounded-lg"
+                                />
+                            </div>
                         </motion.div>
 
                         {/* section roles */}

@@ -2,16 +2,16 @@
 
 import Image from 'next/image'
 import { motion } from "framer-motion";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Hero = () => {
-    const [currentEducationIndex, setCurrentEducationIndex] = useState(0);
+    // const [currentEducationIndex, setCurrentEducationIndex] = useState(0);
     
-    const profile = "/assets/nat2.jpg"
+    const profile = "/assets/picnat.jpg"
     const buLogo = "/assets/BULogo.svg.png"
     const chetuponLogo = "/assets/chetuponlogo.png"
 
-    const EDUCATION = [
+    const _EDUCATION = [
         {
             logo: buLogo,
             institution: "มหาวิทยาลัยกรุงเทพ",
@@ -28,21 +28,21 @@ const Hero = () => {
         }
     ];
 
-    const nextEducationSlide = () => {
-        setCurrentEducationIndex((prevIndex) => 
-            prevIndex === EDUCATION.length - 1 ? 0 : prevIndex + 1
-        );
-    };
+    // const nextEducationSlide = () => {
+    //     setCurrentEducationIndex((prevIndex) => 
+    //         prevIndex === EDUCATION.length - 1 ? 0 : prevIndex + 1
+    //     );
+    // };
 
-    const prevEducationSlide = () => {
-        setCurrentEducationIndex((prevIndex) => 
-            prevIndex === 0 ? EDUCATION.length - 1 : prevIndex - 1
-        );
-    };
+    // const prevEducationSlide = () => {
+    //     setCurrentEducationIndex((prevIndex) => 
+    //         prevIndex === 0 ? EDUCATION.length - 1 : prevIndex - 1
+    //     );
+    // };
 
-    const goToEducationSlide = (index: number) => {
-        setCurrentEducationIndex(index);
-    };
+    // const goToEducationSlide = (index: number) => {
+    //     setCurrentEducationIndex(index);
+    // };
 
     const MotionImage = motion(Image);
 
