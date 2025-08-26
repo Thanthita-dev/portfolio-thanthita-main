@@ -1,6 +1,6 @@
 "use client"
 import { IoLogoLinkedin } from "react-icons/io"
-import { FaGithub, FaInstagram, FaFacebookSquare } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
