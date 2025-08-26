@@ -4,6 +4,10 @@ import Stack from "@/components/Stack/Stack";
 import Project from "@/components/Project/Project";
 import Expericence from "@/components/Expericence/Expericence";
 import Contact from "@/components/Contact/Contact";
+import Education from "@/components/Education/Education";
+import Skill from "@/components/Skill/Skill";
+import Work2 from "@/components/Work2/Work2"
+import Interractive from "@/components/Interractive/Interractive"
 
 export default function Home() {
   return (
@@ -30,13 +34,14 @@ export default function Home() {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />
+        <Education/>
+        <Skill/>
         <Stack/>
         <Project/>
         <Expericence/>
+        <Work2/>
+        <Interractive/>
         <Contact/>
-
-
-
       </div>
     </div>
     </>

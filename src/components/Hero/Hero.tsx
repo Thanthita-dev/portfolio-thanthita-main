@@ -2,9 +2,47 @@
 
 import Image from 'next/image'
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Hero = () => {
+    const [currentEducationIndex, setCurrentEducationIndex] = useState(0);
+    
     const profile = "/assets/nat2.jpg"
+    const buLogo = "/assets/BULogo.svg.png"
+    const chetuponLogo = "/assets/chetuponlogo.png"
+
+    const EDUCATION = [
+        {
+            logo: buLogo,
+            institution: "มหาวิทยาลัยกรุงเทพ",
+            faculty: "คณะวิทยาการคอมพิวเตอร์",
+            program: "สาขาที่มุ่งเน้นวิทยาการข้อมูลและความมั่นคงทางไซเบอร์",
+            level: "ปริญญาตรี"
+        },
+        {
+            logo: chetuponLogo,
+            institution: "วิทยาลัยเชตุพน",
+            faculty: "ปวส. เทคโนโลยีธุรกิจดิจิทัล",
+            program: "สาขาโมบายแอพพลิเคชั่น",
+            level: "ปวส."
+        }
+    ];
+
+    const nextEducationSlide = () => {
+        setCurrentEducationIndex((prevIndex) => 
+            prevIndex === EDUCATION.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const prevEducationSlide = () => {
+        setCurrentEducationIndex((prevIndex) => 
+            prevIndex === 0 ? EDUCATION.length - 1 : prevIndex - 1
+        );
+    };
+
+    const goToEducationSlide = (index: number) => {
+        setCurrentEducationIndex(index);
+    };
 
     const MotionImage = motion(Image);
 

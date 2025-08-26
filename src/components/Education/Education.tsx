@@ -7,35 +7,17 @@ import Link from "next/link"
 const Project = () => {
     const PROJECTS = [
         {
-            title: "Login to DashBoard",
-            image: "/assets/admin1.jpg",
-            des: "A login dashboard built with Tailwind CSS and HTML, designed for user authentication and project management.",
-            tech: ["Tailwind CSS", "HTML"],
-            demo: "https://login-to-dash-board-workshop-tailwind-5.vercel.app/"
+            title: "Bangkok University",
+            image: "/assets/bulofo.jpg",
+            // des: "Computer Science (Data Science and Cyber Security)",
+            des: "วิทยาการคอมพิวเตอร์ (มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยทางไซเบอร์)"
+          
         },
         {
-            title: "Food POS Workshop",
-            image: "/assets/POS.png",  
-            des: "A Point of Sale (POS) system for restaurants, built with Tailwind CSS and modern web technologies.",
-            tech: ["Tailwind CSS", "HTML"],
-            demo: "https://food-pos-workshop-thiwind4.vercel.app/"
+            title: "Chetupon Commercial College",
+            image: "/assets/chetuponlogo.png",  
+            des: "เทคโนโลยีธุรกิจดิจิทัล (โมบายแอพพลิเคชั่น)",
         },
-        {
-            title: "Shopee-Clone",
-            image: "/assets/shopee.png",
-            des: "A Shopee-inspired e-commerce website built with Tailwind CSS and HTML",
-            tech: ["Tailwind CSS", "HTML"],
-            demo: "http://shopee-clone-workshop-tailwind2.vercel.app/"
-
-        },
-         {
-            title: "Ai Meeting",
-            image: "/assets/ai_meeting.png",
-            des: "A workflow automation platform built with n8n, Python, and low-code development approach to simplify integration and process automation.",
-            tech: ["n8n", "Python", "Low-code"],
-            demo: "https://speech-to-text-appli-59n6.bolt.host/"
-
-        }
     ];
 
     return (
@@ -45,7 +27,7 @@ const Project = () => {
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1 }}
                 className="my-16 text-center text-4xl font-bold tracking-tight">
-                Projects
+                Education
             </motion.h2>
 
             <div className="flex flex-col gap-12 p-0 lg:p-20">
@@ -81,7 +63,7 @@ const Project = () => {
                             <p className="text-stone-400 mb-4 leading-relaxed">{item.des}</p>
 
                             {/* Tech Stack */}
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            {/* <div className="flex flex-wrap gap-2 mb-4">
                                 {item.tech.map((tech, techIndex) => (
                                     <span 
                                         className="inline-block bg-stone-900 text-stone-300 text-sm py-1 px-3 rounded"
@@ -90,14 +72,14 @@ const Project = () => {
                                         {tech}
                                     </span>
                                 ))}
-                            </div>
+                            </div> */}
 
                             {/* Demo Button */}
-                            <Link href={item.demo} target="_blank" rel="noopener noreferrer">
+                            {/* <Link href={item.demo} target="_blank" rel="noopener noreferrer">
                                 <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                     View Demo
                                 </button>
-                            </Link>
+                            </Link> */}
 
                         </motion.div>
                     </div>
