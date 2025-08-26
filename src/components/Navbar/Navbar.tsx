@@ -16,16 +16,16 @@ const Navbar = () => {
             icon: <FaGithub />,
             url: "https://github.com/Thanthita-dev"
         },
-        {
-            platform: "Instagram",
-            icon: <FaInstagram />,
-            url: "https://www.instagram.com/tk.naet/"
-        },
-        {
-            platform: "FB",
-            icon: <FaFacebookSquare />,
-            url: "https://www.facebook.com/thanthita.kornwanwanat/"
-        },
+        // {
+        //     platform: "Instagram",
+        //     icon: <FaInstagram />,
+        //     url: "https://www.instagram.com/tk.naet/"
+        // },
+        // {
+        //     platform: "FB",
+        //     icon: <FaFacebookSquare />,
+        //     url: "https://www.facebook.com/thanthita.kornwanwanat/"
+        // },
     ]
 
     return (
